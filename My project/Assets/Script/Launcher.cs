@@ -2,12 +2,14 @@ using UnityEngine;
 
 public class Launcher : MonoBehaviour
 {
+    public float shootingRate = 0.5f;
+
     public GameObject bullet; // method to load missile prefab
 
     void Start()
     {
         // InvokeRepeating("function name, initial delay, delay interval);
-        InvokeRepeating("Shoot", 0.5f, 0.3f);
+        InvokeRepeating("Shoot", 0.5f,shootingRate);
     }
 
     void Shoot()

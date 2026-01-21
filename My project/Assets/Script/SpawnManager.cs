@@ -17,13 +17,11 @@ public class SpawnManager : MonoBehaviour
 
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     { // SpawnEnemy를 반복해서 불러주고, 최초 1초, 이후엔 0.5초마다 부르기
         InvokeRepeating("SpawnEnemy", 1f, 0.5f);
     }
 
-    // Update is called once per frame
     void Update()
     {
         
